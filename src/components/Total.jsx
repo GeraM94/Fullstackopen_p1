@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Total = ({part1,part2,part3}) => {
+const Total = ({parts}) => {
 
-  const total = part1.exercises + part2.exercises + part3.exercises;
-
-  return (
+    return (
     <div>
-      <p>Total de ejercicios: {total}</p>
+      <p>Total de ejercicios: {parts.reduce((accumulator, part) => accumulator + part.exercises,0)}</p>
     </div>
   );
 };

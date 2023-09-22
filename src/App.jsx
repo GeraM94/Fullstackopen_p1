@@ -23,8 +23,8 @@ const App = () => {
     return (
         <div>
             <Header course={course} />
-            <Content part1={parts[0]} part2={parts[1]} part3={parts[2]} />
-            <Total part1={parts[0]} part2={parts[1]} part3={parts[2]} />
+            <Content parts={parts} />
+            <Total parts={parts} />
         </div>
     );
 };
