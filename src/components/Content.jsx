@@ -1,7 +1,7 @@
 import Part from './Part'
 
 function Content({parts}) {
-  console.log(parts);
+
 
   return (
     <>
